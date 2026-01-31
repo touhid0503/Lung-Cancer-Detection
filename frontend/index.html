@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lung Cancer Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Lung Cancer Prediction</h2>
+
+    <input type="number" id="age" placeholder="Age">
+
+    <select id="gender">
+        <option value="">Gender</option>
+        <option value="0">Male</option>
+        <option value="1">Female</option>
+    </select>
+
+    <!-- Yes/No Fields -->
+    <select id="smoking"><option value="">Smoking?</option><option value="1">No</option><option value="2">Yes</option></select>
+    <select id="yellow_fingers"><option value="">Yellow Fingers?</option><option value="1">No</option><option value="2">Yes</option></select>
+    <select id="anxiety"><option value="">Anxiety?</option><option value="1">No</option><option value="2">Yes</option></select>
+    <select id="peer_pressure"><option value="">Peer Pressure?</option><option value="1">No</option><option value="2">Yes</option></select>
+    <select id="chronic_disease"><option value="">Chronic Disease?</option><option value="1">No</option><option value="2">Yes</option></select>
+    <select id="fatigue"><option value="">Fatigue?</option><option value="1">No</option><option value="2">Yes</option></select>
+    <select id="allergy"><option value="">Allergy?</option><option value="1">No</option><option value="2">Yes</option></select>
+    <select id="wheezing"><option value="">Wheezing?</option><option value="1">No</option><option value="2">Yes</option></select>
+    <select id="alcohol_consuming"><option value="">Alcohol Consuming?</option><option value="1">No</option><option value="2">Yes</option></select>
+    <select id="coughing"><option value="">Coughing?</option><option value="1">No</option><option value="2">Yes</option></select>
+    <select id="shortness_of_breath"><option value="">Shortness of Breath?</option><option value="1">No</option><option value="2">Yes</option></select>
+    <select id="swallowing_difficulty"><option value="">Swallowing Difficulty?</option><option value="1">No</option><option value="2">Yes</option></select>
+    <select id="chest_pain"><option value="">Chest Pain?</option><option value="1">No</option><option value="2">Yes</option></select>
+
+    <button onclick="predict()">Predict</button>
+
+    <h3 id="result"></h3>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
